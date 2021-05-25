@@ -12,6 +12,8 @@ services:
       - ./src:/work
   db:
     build: ./docker/mysql
+    ports:
+      - 3306:3306
     volumes:
       - db-store:/var/lib/mysql
 volumes:
