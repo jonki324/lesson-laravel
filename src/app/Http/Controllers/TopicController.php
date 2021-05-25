@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class TopicController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        return Topic::with('comments')->get()->toArray();
+        return view('topics.index');
     }
 }
