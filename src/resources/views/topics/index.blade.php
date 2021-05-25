@@ -4,4 +4,5 @@
 
 @section('main')
 メイン
+<b-button>Button</b-button>
 @endsection

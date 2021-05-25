@@ -21,3 +21,7 @@ Route::get('/', function () {
 
 Route::get('/topics', [TopicController::class, 'index']);
 Route::get('/comments', [CommentController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
